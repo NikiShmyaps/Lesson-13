@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "MuseoSansCyrl-700";
+  src: url("../font/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MuseoSansCyrl-300";
+  src: url("../font/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 18px 30px;
+}
+
+.navbar {
+  padding: 8px 0;
+}
+.navbar-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__info {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.navbar__address {
+  display: flex;
+  flex-direction: column;
+  font-family: "MuseoSansCyrl-300";
+  color: #333333;
+  font-size: 17px;
+}
+.navbar__button {
+  margin-left: 30px;
+  color: #333333;
+  font-family: "MuseoSansCyrl-700";
+  font-size: 16px;
+}
+.navbar__phone {
+  color: #333333;
+  font-family: "MuseoSansCyrl-700";
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  padding-top: 9px;
+}
+.navbar__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
+
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 10px;
+    padding: 15px 26px;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
+}
