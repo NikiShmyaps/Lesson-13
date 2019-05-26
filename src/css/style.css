@@ -54,13 +54,14 @@ img {
   flex-direction: column;
   font-family: "MuseoSansCyrl-300";
   color: #333333;
-  font-size: 16px;
+  font-size: 13px;
 }
 .navbar__button {
   margin-left: 30px;
   color: #333333;
   font-family: "MuseoSansCyrl-700";
   font-size: 16px;
+  cursor: pointer;
 }
 .navbar__phone {
   color: #333333;
@@ -86,7 +87,7 @@ img {
   }
 
   .navbar__address {
-    font-size: 12px;
+    font-size: 10px;
   }
   .navbar__phone {
     font-size: 15px;
@@ -101,10 +102,19 @@ img {
 }
 @media (max-width: 567px) {
   .container {
-    max-width: 370px;
+    max-width: 310px;
   }
 
   .navbar__contacts {
     display: none;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 277px;
+  }
+
+  .navbar__button {
+    color: 13px;
   }
 }
