@@ -22,11 +22,12 @@ img
 		background-color: lighten($main-color, 10%)
 		cursor: pointer
 .section
-	padding: 55px 0
+	padding: 70px 0
 	&-title
 		font-family: "MuseoSansCyrl-700"
 		font-size: 24px
 		font-weight: bold
+		text-align: center
 	&-subtitle
 		font-family: "MuseoSansCyrl-300"
 		display: block
@@ -52,3 +53,9 @@ img
 	&:focus
 		border: 1px solid $main-color
 		outline: none
+.arrows
+	&__left, &__right
+		&:hover
+			cursor: pointer
+		&:focus
+			outline: none
