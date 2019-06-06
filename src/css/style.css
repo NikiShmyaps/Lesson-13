@@ -100,6 +100,16 @@ img {
   outline: none;
 }
 
+@media (max-width: 992px) {
+  .button:hover {
+    background-color: #ffd200;
+    cursor: default;
+  }
+
+  .arrows__left:hover, .arrows__right:hover {
+    cursor: default;
+  }
+}
 .navbar {
   padding: 5px 0;
 }
@@ -139,6 +149,11 @@ img {
   flex-direction: column;
 }
 
+@media (max-width: 992px) {
+  .navbar__phone:hover {
+    cursor: default;
+  }
+}
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -576,6 +591,20 @@ img {
 @media (max-width: 768px) {
   .cards {
     justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .card:hover {
+    box-shadow: none;
+  }
+  .card:hover .card__image:before {
+    opacity: 0;
+  }
+  .card__link:hover {
+    cursor: default;
+  }
+  .card__link:hover:after {
+    height: 3px;
   }
 }
 .step {

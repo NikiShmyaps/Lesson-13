@@ -94,3 +94,14 @@
 @media (max-width: 768px)
 	.cards
 		justify-content: center
+@media (max-width: 992px)
+	.card
+		&:hover
+			box-shadow: none
+			.card__image:before
+				opacity: 0
+		&__link
+			&:hover
+				cursor: default
+				&:after
+					height: 3px
